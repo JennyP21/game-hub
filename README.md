@@ -47,3 +47,9 @@ This project uses React as Frontend library which is styled by Chakra UI one of 
 #### (5) Change your website to either light or dark theme.
 
    ![Alt text](md/theme.png)
+
+### Credit
+
+This project was built with the help of Mosh Hamedani in his newest React course.
+
+Link to project site https://codewithmosh.com/
