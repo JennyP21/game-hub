@@ -52,4 +52,4 @@ This project uses React as Frontend library which is styled by Chakra UI one of 
 
 This project was built with the help of Mosh Hamedani in his newest React course.
 
-Link to project site https://codewithmosh.com/
+Link to course site https://codewithmosh.com/
