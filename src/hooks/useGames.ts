@@ -4,9 +4,10 @@ import APIClient, { FetchResponse } from "../services/api-client";
 import useGameQueryStore from "../store";
 import { Platform } from "./usePlatforms";
 
-const apiClient = new APIClient<Game>("/games");
-export interface Game {
+const apiClient = new APIClient<Games>("/games");
+export interface Games {
   id: number;
+  slug: string;
   name: string;
   background_image: string;
   parent_platforms: { platform: Platform }[];
@@ -16,7 +17,7 @@ export interface Game {
 
 const useGames = () => {
   const gameQuery = useGameQueryStore((s) => s.gameQuery);
-  return useInfiniteQuery<FetchResponse<Game>, Error>({
+  return useInfiniteQuery<FetchResponse<Games>, Error>({
     queryKey: ["games", gameQuery],
     queryFn: ({ pageParam = 1 }) =>
       apiClient.getAll({
