@@ -12,7 +12,7 @@ const GameTrailer = ({ gameId }: Props) => {
     if (error) throw error;
 
     const first = data?.results[0];
-    return first && (
+    return first ? (
         <video
             src={first.data[480]}
             poster={first.preview}
@@ -20,7 +20,7 @@ const GameTrailer = ({ gameId }: Props) => {
             autoPlay
         >
         </video>
-    )
+    ) : null;
 }
 
 export default GameTrailer
