@@ -1,6 +1,6 @@
 # Game Hub
 
-Welcome to Game Hub! Visit our live website at http://gamehub.jennypatel.dev/
+Welcome to Game Hub! Visit my live website at http://gamehub.jennypatel.dev/
 
 This projects has a variety of games for a gamer. It has various ways to sort, filter and search a game. We can filter a game by Genre and Platform. It can also be sorted by Relevance, Popularity, name and various other ways. Also, a user can directly search his favourite game from the search bar.
 
